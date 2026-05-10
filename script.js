@@ -13,9 +13,13 @@ menuCloseButton.addEventListener("click", () => {
 // Fix: selector changed from '.slider-swiper' to '.slider-container'
 const swiper = new Swiper('.slider-container', {
     loop: true,
+    grabCursor:true,
+    spaceBetween:25,
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets:true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
