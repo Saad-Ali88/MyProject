@@ -381,16 +381,23 @@ resize: vertical;
  .footer-section{
     padding: 20px 0;
     background: var(--dark-color);
+    
  }
  .footer-section .section-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
  }
- .footer-section:where(.copyright-text, .social-link, .policy-link){
+ /* .footer-section:where(.copyright-text, .social-link, .policy-link){
     color: var(--white-color);
     transition: 0.2s ease;
- }
+ } */
+  .footer-section .copyright-text,
+.footer-section .social-link,
+.footer-section .policy-link {
+    color: var(--white-color);
+    transition: 0.2s ease;
+}
  .footer-section .social-link-list{
     display: flex;
     gap: 25px;
@@ -406,6 +413,7 @@ resize: vertical;
     color: var(--white-color);
 
  }
+ 
 @media screen and (max-width:1024px){
 .menu-section .menu-list{
     gap: 60px;
